@@ -43,7 +43,7 @@ minTime= Entry(clock,textvariable = min,bg = "pink",width = 15).place(x=150,y=30
 secTime = Entry(clock,textvariable = sec,bg = "pink",width = 15).place(x=200,y=30)
 
 #To take the time input by user:
-submit = Button(clock,text = "Set Alarm",fg="red",width = 10,command = actual_time).place(x =110,y=70)
+submit = Button(clock,text = "Set Alarm",fg="red",width = 10,command = get_time).place(x =110,y=70)
 
 clock.mainloop()
 #Execution of the window.
@@ -52,5 +52,5 @@ clock.mainloop()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    actual_time()
+    get_time()
 
